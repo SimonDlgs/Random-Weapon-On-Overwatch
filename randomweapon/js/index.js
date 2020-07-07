@@ -69,9 +69,9 @@ function resetall() {
 	document.getElementById("try").innerHTML = "0";
 	document.getElementById("currenthero").innerHTML = "";
 	document.getElementById("diffcnt").innerHTML = "0/s";
-}
+} //Reset all settings and webpage
 
-$("#start").click(function() {
+$("#start").click(function () {
 	if (startbtn.classList.contains("active")) {
 		document.getElementById("start").classList.remove("active");
 		document.getElementById("start").innerHTML = "C'est parti !";
@@ -84,7 +84,7 @@ $("#start").click(function() {
 		started = true;
 		letsgo();
 	}
-});
+}); //When start button is clicked
 
 $("#reset").click(function() {
 	resetall();
@@ -94,7 +94,7 @@ $("#reset").click(function() {
 });
 
 function formatNumber(num) {
-	return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'); //Formating great numbers (Exemple : 1000000 will convert to 1.000.000)
 }
 
 function letsgo() {
@@ -102,15 +102,16 @@ function letsgo() {
 		let date_ob = new Date();
 	}
 
+
 	if ((typeof nsecs !== 'undefined') && (typeof tryingcnt !== 'undefined')) {
 		if (nsecs != persec) {
 			persec = nsecs;
-			document.getElementById("diffcnt").innerHTML =+ Math.abs(diffcnt - tryingcnt) + '/s';
+			document.getElementById("diffcnt").innerHTML =+ Math.abs(diffcnt - tryingcnt) + '/s'; //Convert and show count of random per second
 			diffcnt = tryingcnt;
 		}
 	}
 
-	tryingcnt++;
+	tryingcnt++; //Count of random
 
 	var now = new Date;
 	difference = (now - date_ob);
@@ -123,9 +124,9 @@ function letsgo() {
 	nmins = (mins < 10 ? "0" : "") + mins;
 	nsecs = (secs < 10 ? "0" : "") + secs;
 	
-	document.getElementById('hrs').firstChild.nodeValue = nhours;
-	document.getElementById('mins').firstChild.nodeValue = nmins;
-	document.getElementById('secs').firstChild.nodeValue = nsecs;
+    document.getElementById('hrs').firstChild.nodeValue = nhours; //Hours of stopwatch
+	document.getElementById('mins').firstChild.nodeValue = nmins; //Minutes of stopwatch
+	document.getElementById('secs').firstChild.nodeValue = nsecs; //Seconds of stopwatch
 
 	document.getElementById('try').firstChild.nodeValue = formatNumber(tryingcnt);
 
@@ -276,7 +277,7 @@ function letsgo() {
 	document.getElementById("zenyatta").innerHTML = formatNumber(zenyatta);
 
 	if (started === true && tryingcnt < 100000) {
-		setTimeout(function () {
+		setTimeout(function () { //Relaunch procedure
 			var now = new Date;
 			letsgo();
 		}, 0);
