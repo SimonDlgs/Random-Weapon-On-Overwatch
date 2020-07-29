@@ -1,279 +1,280 @@
 @font-face {
-	font-family: "owfont";
-	src: url("../fonts/font.ttf");
+    font-family: "owfont";
+    src: url("../fonts/font.ttf");
 }
 
 @font-face {
-	font-family: "owfont2";
-	src: url("../fonts/font2.ttf");
+    font-family: "owfont2";
+    src: url("../fonts/font2.ttf");
 }
 
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-button {
-	width: 4px;
-	height: 4px;
+    width: 4px;
+    height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #adadad;
-	border: 0px solid #ffffff;
-	border-radius: 100px;
+    background: #adadad;
+    border: 0px solid #ffffff;
+    border-radius: 100px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-	background: #e0e0e0;
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background: #e0e0e0;
+    }
 
-::-webkit-scrollbar-thumb:active {
-	background: #909090;
-}
+    ::-webkit-scrollbar-thumb:active {
+        background: #909090;
+    }
 
 ::-webkit-scrollbar-track {
-	background: none;
+    background: none;
 }
 
-::-webkit-scrollbar-track:hover {
-	background: none;
-}
+    ::-webkit-scrollbar-track:hover {
+        background: none;
+    }
 
-::-webkit-scrollbar-track:active {
-	background: none;
-}
+    ::-webkit-scrollbar-track:active {
+        background: none;
+    }
 
 ::-webkit-scrollbar-corner {
-	background: transparent;
+    background: transparent;
 }
 
 * {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
-	box-sizing: border-box;
-	font-family: 'Calibri';
-	-webkit-font-smoothing: antialiased;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    box-sizing: border-box;
+    font-family: 'Calibri';
+    -webkit-font-smoothing: antialiased;
 }
 
-*:focus {
-	outline: 0;
-}
+    *:focus {
+        outline: 0;
+    }
 
 html {
-	height: 100%;
-	width: 100%;
-	background-color: rgb(37, 37, 37);
+    height: 100%;
+    width: 100%;
+    background-color: rgb(37, 37, 37);
 }
 
 body {
-	height: calc(100% - 20px);
+    height: calc(100% - 20px);
 }
 
 hr {
-	display: block;
-	unicode-bidi: isolate;
-	margin-block-start: 0.5em;
-	margin-block-end: 0.5em;
-	margin-inline-start: auto;
-	margin-inline-end: auto;
-	overflow: hidden;
-	border-style: solid;
-	border-width: 1px;
-	width: 100%;
-	border-color: #a96326;
-	margin-top: 25px;
-	margin-bottom: 0;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    border-color: #a96326;
+    margin-top: 25px;
+    margin-bottom: 0;
 }
 
 a {
-	cursor: context-menu;
+    cursor: context-menu;
 }
 
 h1 {
-	font-family: 'owfont2';
-	color: white;
-	font-weight: normal;
-	text-align: center;
+    font-family: 'owfont2';
+    color: white;
+    font-weight: normal;
+    text-align: center;
 }
 
 button {
-	display: block;
-	margin: 2px;
-	padding: 10px;
-	color: white;
-	border: 0;
-	cursor: pointer;
+    display: block;
+    margin: 2px;
+    padding: 10px;
+    color: white;
+    border: 0;
+    cursor: pointer;
 }
 
-button#start {
-	background-color: #45984b;
-	font-weight: bold;
-	font-size: 22pt;
-}
+    button#start {
+        background-color: #45984b;
+        font-weight: bold;
+        font-size: 22pt;
+    }
 
-button#reset {
-	background-color: gray;
-	font-weight: normal;
-	font-size: 16pt;
-}
+    button#reset {
+        background-color: gray;
+        font-weight: normal;
+        font-size: 16pt;
+    }
 
 .logo {
-	text-align: center;
-	z-index: 2;
+    text-align: center;
+    z-index: 2;
 }
 
-.logo a {
-	font-family: 'owfont';
-	font-size: 510pt;
-}
+    .logo a {
+        font-family: 'owfont';
+        font-size: 510pt;
+    }
 
 a.uno {
-	font-family: 'owfont';
-	font-size: 510pt;
-	-webkit-background-clip: text;
-	background-image: url('../img/back.png');
-	background-position: center;
-	background-repeat: repeat-x;
-	background-size: cover;
-	color: transparent;
-	will-change: transform;
-	animation: background-image-animation 165s linear infinite;
-	transform: translateX(0) scale(1.1);
-	z-index: 1;
+    font-family: 'owfont';
+    font-size: 510pt;
+    -webkit-background-clip: text;
+    background-image: url('../img/back.png');
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: cover;
+    color: transparent;
+    will-change: transform;
+    animation: background-image-animation 165s linear infinite;
+    transform: translateX(0) scale(1.1);
+    z-index: 1;
 }
 
 a.dos {
-	position: absolute;
-	text-shadow: orange 0 0 8px;
-	z-index: -1;
+    position: absolute;
+    text-shadow: orange 0 0 8px;
+    z-index: -1;
 }
 
 @keyframes background-image-animation {
-	0% {
-background-position: 0 0;
-	}
-	100% {
-background-position: -1820px 0;
-	}
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1820px 0;
+    }
 }
 
 .panel {
-	position: absolute;
-	width: 450px;
-	background-color: rgb(43, 43, 43);
-	border: 1px solid #3e3e3e;
+    position: absolute;
+    width: 450px;
+    background-color: rgb(43, 43, 43);
+    border: 1px solid #3e3e3e;
 }
 
 .secpnl {
-	bottom: 10px;
-	right: 10px;
-	height: 145px;
-	z-index: 5;
+    bottom: 10px;
+    right: 10px;
+    height: 145px;
+    z-index: 5;
 }
 
 .mainpnl {
-	top: 10px;
-	left: 10px;
-	height: calc(100% - 20px);
-	padding-bottom: 140px;
+    top: 10px;
+    left: 10px;
+    height: calc(100% - 20px);
+    padding-bottom: 140px;
 }
 
 .tripnl {
-	bottom: 165px;
-	right: 10px;
+    bottom: 165px;
+    right: 10px;
 }
 
 .fiftyfifty {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .fifty {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	padding: 10px;
-	color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    color: white;
 }
 
 .main {
-	text-align: right;
+    text-align: right;
 }
 
 .second {
-	text-align: left;
+    text-align: left;
 }
 
 #resultlabel {
-	color: white;
-	font-size: 36pt;
-	font-weight: bold;
+    color: white;
+    font-size: 36pt;
+    font-weight: bold;
 }
 
 .fireworks {
-	height: 100px;
-	width: 100px;
+    height: 100px;
+    width: 100px;
 }
 
 .topbar {
-	height: 5px;
-	width: 100%;
-	margin-bottom: 5px;
-	background-color: #ff8100;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: #ff8100;
 }
 
 .active {
-	background-color: red!important;
+    background-color: red !important;
 }
 
 #resultlabel {
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .mainpnl > .fiftyfifty {
-	height: calc(100% - 70px);
-	overflow-y: scroll;
-	overflow-x: hidden;
+    height: calc(100% - 70px);
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 img.logosketv {
-	position: fixed;
-	left: 20px;
-	bottom: 20px;
-	height: 95px;
-	opacity: 0.3;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    height: 95px;
+    opacity: 0.3;
 }
 
 span.logotxt {
-	position: fixed;
-	left: 110px;
-	bottom: 40px;
-	font-weight: bold;
-	font-size: 40pt;
-	color: rgb(102, 102, 102);
-	font-family: 'Arial';
+    position: fixed;
+    left: 110px;
+    bottom: 40px;
+    font-weight: bold;
+    font-size: 40pt;
+    color: rgb(102, 102, 102);
+    font-family: 'Arial';
 }
 
 #currenthero {
-	text-align: center;
-	color: white;
-	position: absolute;
-	width: calc(100% - 20px);
-	font-weight: bold;
-	font-size: 50pt;
-	bottom: 60px;
-	text-transform: capitalize;
-	z-index: 4;
+    text-align: center;
+    color: white;
+    position: absolute;
+    width: calc(100% - 20px);
+    font-weight: bold;
+    font-size: 50pt;
+    bottom: 60px;
+    text-transform: capitalize;
+    z-index: 4;
 }
 
 span#diffcnt {
-	color: gray;
-	font-size: 9pt;
-	margin-bottom: 6px;
+    color: gray;
+    font-size: 9pt;
+    margin-bottom: 6px;
 }
