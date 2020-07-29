@@ -35,16 +35,16 @@ var perso = [
 
 //Reset all settings and webpage
 function resetall() {
-
     for (var i = 0; i < perso.length; i++) {
         document.getElementById(perso[i][0]).innerHTML = "0";
-
-        tryingcnt = 0;
-        persec = 0;
-        diffcnt = 0;
+        perso[i][1] = 0;
     }
+    tryingcnt = 0;
+    persec = 0;
+    diffcnt = 0;
     document.getElementById("currenthero").innerHTML = "";
     document.getElementById("diffcnt").innerHTML = "0/s";
+    started = false;
 }
 
 //When start button is clicked
@@ -64,13 +64,7 @@ $("#start").click(function () {
 });
 
 $("#reset").click(function () {
-    for (var i = 0; i < perso.length; i++) {
-        document.getElementById(perso[i][0]).innerHTML = "0";
-    }
-    started = false;
-    tryingcnt = 0;
-    persec = 0;
-    diffcnt = 0;
+    resetall();
 });
 
 function formatNumber(num) {
